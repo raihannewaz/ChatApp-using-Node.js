@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ChatApp with Fileshare</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+        <div class="app">
+            <div class="screen join-screen active">
+                <div class="form">
+                    <h2>Join With Round-53</h2>
+                    <div class="form-input">
+                        <label>Username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="form-input">
+                        <button id="join-user">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="screen chat-screen">
+                <div class="header">
+                    <div class="logo">IsDB Round-53 C#</div>
+                    <button id="exit-chat">Leave Chat</button>
+                </div>
+                <div class="messages">
+    
+                </div>
+                <input type="file" id="file-upload">
+                <div class="typebox">
+                    <input type="text" id="message-input" />
+                    <button id="send-message">Send</button>
+                </div>
+            </div>
+        </div>
+    <script src="socket.io/socket.io.js" type="text/javascript"></script>
+    <script src="code.js" type="text/javascript"></script>
+</body>
+</html>
